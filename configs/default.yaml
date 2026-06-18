@@ -1,0 +1,23 @@
+seed: 42
+
+env:
+  grid_size: 5
+  max_steps: 50
+  monitoring_prob: 0.5
+
+agent:
+  d_model: 64
+  n_layers: 4
+  n_heads: 4
+  d_ff: 128
+  dropout: 0.1
+
+training:
+  lr: 3.0e-4
+  n_episodes: 10000
+  gamma: 0.99
+  batch_size: 32
+
+steering:
+  alpha: 1.0
+  method: lp   # lp | dom | pca
