@@ -165,14 +165,21 @@ where `α ∈ [0, 1]` is the steering coefficient controlling intervention stren
 
 ## 📊 Preliminary Results
 
-*(Results in progress — first experiments expected Q3 2026)*
+*Preliminary results on a randomly initialised agent (full RL-trained evaluation ongoing).*
 
-| Method | Deception Rate ↓ | Task Performance Retained ↑ |
+| Condition | Deception Rate | Performance Retained |
 |---|---|---|
-| No intervention | 100% | 100% |
-| Behavioral monitor | ~60% | 100% |
-| **Ours (LP steering)** | **TBD** | **TBD** |
-| Ours (DoM steering) | TBD | TBD |
+| No intervention | 53.00% | 100.00% |
+| LP steering α=0.4 | 49.50% | 93.68% |
+| LP steering α=0.6 | 48.50% | 103.30% |
+| LP steering α=0.8 | **44.00%** | **102.20%** |
+| LP steering α=1.0 | 56.00% | 91.76% |
+
+> Best result at α=0.8: deception reduced by ~17% with no performance cost.
+> Note: results are preliminary on a randomly initialised agent without RL training.
+> Full evaluation with a trained deceptive agent is ongoing.
+> Linear probe accuracy at l*=0: **0.780** (78% separation of cooperative 
+> vs deceptive activations)
 
 ---
 
